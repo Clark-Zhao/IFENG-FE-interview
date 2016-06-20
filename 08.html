@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>08</title>
+	<style type="text/css">
+		.click_btn {
+			height: 100px;
+			width: 200px;
+			background-color: #fff;
+			border: 1px solid black;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+</head>
+<body>
+	<div class="click_btn"></div>
+	<div class="click_btn"></div>
+	<div class="click_btn"></div>
+	<div class="click_btn"></div>
+	<div class="click_btn"></div>
+	<script type="text/javascript">
+		$(".click_btn").mouseover(function() {
+			$(this).css('backgroundColor', '#105c9d');
+		}).mouseleave(function() {
+			$(this).css('backgroundColor', '#fff');
+		});
+	</script>
+</body>
+</html>

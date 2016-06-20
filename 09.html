@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>09</title>
+	<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+</head>
+<body>
+	<select multiple>
+		<option selected>上海</option>
+		<option selected>北京</option>
+		<option>杭州</option>
+		<option selected>广州</option>
+		<option>深圳</option>
+	</select>
+	<p>选中的标签为：<span></span></p>
+	<script type="text/javascript">
+		$("select option:selected").each(function() {
+			$("span").append(' '+$(this).html());
+		});
+	</script>
+</body>
+</html>
